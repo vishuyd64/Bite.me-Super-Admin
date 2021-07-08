@@ -1,0 +1,150 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+       <div class="mainHeadInner DisFlex">
+            <h4 class="Title">Driver Management</h4>
+       </div>
+    </div>
+    <div class="marginInner">
+            
+            <div class="driverData-1 DashboardArea">
+                <div class="row">
+                    <div class="col-md-1">
+                        <h4 class="Title">Data</h4>
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <aside>
+                            <div class="dataHead">
+                                <h3 class="Title">RIDES</h3>
+                            </div>
+                            <div class="dataFoot">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h3>Total <span>58</span></h3>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Today <span>2</span></h3>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="assets/images/scooter.svg" alt="scooter" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div> -->
+                    <div class="col-sm-4">
+                        <aside>
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <span class="userDash"><img src="assets/images/3.png" alt="user" class="img-fluid"></span>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2 class="count">92</h2>
+                                    <h4>RIDES </h4>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- <div class="col-md-4">
+                        <aside>
+                            <div class="dataHead">
+                                <h3 class="Title">REGISTRATION</h3>
+                            </div>
+                            <div class="dataFoot">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h3>Total <span>258</span></h3>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Today <span>21</span></h3>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="assets/images/group.svg" alt="scooter" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div> -->
+                    <div class="col-sm-4">
+                        <aside>
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <span class="userDash"><img src="assets/images/4.png" alt="user" class="img-fluid"></span>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2 class="count">4</h2>
+                                    <h4>REGISTRATION</h4>
+                                </div>
+                            </div>
+                        </aside>
+                    </div> 
+
+                    <div class="col-md-3 downBtn">
+                        <a [routerLink]="['/driver-management-detail']" class="Button btnRound btnGreen">View All Driver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="liveTracking">
+                <h3 class="Title">Live Tracking : <span> No. Of Drivers 10</span></h3>
+            </div>
+            <div class="DriverMap">
+                <div class="satellite">
+                    <ul>
+                        <li class="active">Map</li>
+                        <li>Satellite</li>
+                    </ul>
+                </div>
+                <div class="satelliteSearch FixSearch">
+                    <form action="">
+                        <div class="form-group" style="position: relative;">
+                            <input type="text" placeholder="Search"  style="padding-right: 35px;" class="form-control">
+                            <a href="javaScript:void(0)" class="SearchAbsolute"><img src="assets/images/search.svg"
+                                style="width: 16px;" alt="rotate-left" class="img-fluid"></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="mapLocation">
+                    <div class="driverDetail square square-bottom clickDemo">
+                        <h6>Name :  <span> Abdul</span></h6>
+                        <h6>Phone No. :   <span> +971 9876543210</span></h6>
+                        <h6>Order Id :  <span> HJN2563</span></h6>
+                        <h6>Order Status :   <span> On the way </span></h6>
+                        <div class="mt-2">
+                            <a href="javaScript:void(0)" class="showData">More details</a>
+                        </div>
+                    </div>
+                    <div class="driverDetail square square-bottom clickDisplay">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h6>Name :  <span> Abdul</span></h6>
+                                <h6>Phone No. :   <span> +971 9876543210</span></h6>
+                                <h6>Order Id :  <span> HJN2563</span></h6>
+                                <h6>Order Status :   <span> On the way </span></h6>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="driverDetail-right">
+                                    <h5>Order accepted time <span>2:00 PM</span></h5>
+                                    <h5>ETA <span>10 Mins.</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2 pb-2">
+                            <h6>Current Store Name :   <span> The Zaika </span></h6>
+                            <h6>Current Store ID :     <span> BHN5566</span></h6>
+                        </div>
+                        <div class="pt-2 pb-2">
+                            <h6>Customer Name :  :   <span> Vishal </span></h6>
+                            <h6>Customer Phone No. :     <span> +971 9873216540 </span></h6>
+                        </div>
+                        
+                    </div> 
+                    <img src="assets/images/map-location.svg" alt="map-location" class="img-fluid">
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14008.49243502847!2d77.36689595!3d28.6260722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1615187882162!5m2!1sen!2sin"
+                    width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+    </div>
+</div>

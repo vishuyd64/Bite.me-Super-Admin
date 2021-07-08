@@ -1,0 +1,115 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Report Management</h4>
+    </div>
+    <div class="marginInner pb-3">
+        <div class="DisFlex pb-4">
+            <h4 class="Title">Customer Details</h4>
+            <div class="backArrow">
+                <a [routerLink]="['/report']" class="backBtn" ><img src="assets/images/arrow-left.svg" alt="arrow-left" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="TableList">
+            <div class="dragscroll">
+                <div class="DisFlex brandSelection pt-0">
+                    <div class="Filter menuMix">
+                        <div class="form-group">
+                            <label for="">Select Brand</label>
+                            <select class="form-control"> 
+                                <option>About Afif sandwiches From Beirut, Dubai Marina</option>
+                                <option>Burger King </option>
+                                <option>About Afif sandwiches From Beirut, Dubai Marina </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="download downloadCustomer">
+                        <a href="javaScript:void(0)">
+                            <img src="assets/images/download.svg" alt="download" class="img-fluid">Download CSV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="marginInner pb-2">
+        <div class="customerSearch">
+            <form>
+                <span>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+                <input type="text" class="" placeholder="Search">
+            </form>
+        </div>
+    </div>
+
+    <div class="marginInner">
+        <div class="TableList">
+            <div class="dragscroll">
+                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Customer Id</th>
+                            <th>Customer name</th>
+                            <th>email id</th>
+                            <th>contact no.  </th>
+                            <th>address  </th>
+                            <th>area  </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ABD351</td>
+                            <td>Abdullah</td>
+                            <td>Abdullah@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>Sheikh Mohammed bin Rashid Bivd</td>
+                            <td>Downtown Dubai</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                        <td>ABD351</td>
+                            <td>Abdullah</td>
+                            <td>Abdullah@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>Sheikh Mohammed bin Rashid Bivd</td>
+                            <td>Downtown Dubai</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                       <td>ABD351</td>
+                            <td>Abdullah</td>
+                            <td>Abdullah@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>Sheikh Mohammed bin Rashid Bivd</td>
+                            <td>Downtown Dubai</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                       <td>ABD351</td>
+                            <td>Abdullah</td>
+                            <td>Abdullah@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>Sheikh Mohammed bin Rashid Bivd</td>
+                            <td>Downtown Dubai</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                       <td>ABD351</td>
+                            <td>Abdullah</td>
+                            <td>Abdullah@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>Sheikh Mohammed bin Rashid Bivd</td>
+                            <td>Downtown Dubai</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

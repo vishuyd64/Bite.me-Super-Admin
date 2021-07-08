@@ -1,0 +1,91 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Report Management</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DisFlex pb-4">
+            <h4 class="Title">Revenue by Area</h4>
+            <div class="backArrow">
+                <a [routerLink]="['/report']" class="backBtn" ><img src="assets/images/arrow-left.svg" alt="arrow-left" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="TableList">
+            <div class="dragscroll">
+                <div class="DisFlex">
+                    <div class="Filter">
+                        <div class="form-group">
+                            <label>From Date </label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>To Date </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="download">
+                        <a href="javaScript:void(0)">
+                            <img src="assets/images/download.svg" alt="download" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Brand Name</th>
+                            <th>Company Name</th>
+                            <th>Orders </th>
+                            <th>Cancelled </th>
+                            <th>Sales </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Vishu</td>
+                            <td>Tata</td>
+                            <td>111</td>
+                            <td>11</td>
+                            <td>AED 1225.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Vishu</td>
+                            <td>Tata</td>
+                            <td>111</td>
+                            <td>11</td>
+                            <td>AED 1225.00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Vishu</td>
+                            <td>Tata</td>
+                            <td>111</td>
+                            <td>11</td>
+                            <td>AED 1225.00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Vishu</td>
+                            <td>Tata</td>
+                            <td>111</td>
+                            <td>11</td>
+                            <td>AED 1225.00</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Vishu</td>
+                            <td>Tata</td>
+                            <td>111</td>
+                            <td>11</td>
+                            <td>AED 1225.00</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

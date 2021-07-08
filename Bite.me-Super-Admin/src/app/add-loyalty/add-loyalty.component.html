@@ -1,0 +1,243 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Loyalty Management </h4>
+    </div>
+    <div class="marginInner">
+        <div class="DisFlex pb-4">
+            <h4 class="Title">Add New Loyalty </h4>
+            <div class="backArrow">
+                <a [routerLink]="['/loyalty-management']" class="backBtn" ><img src="assets/images/arrow-left.svg" alt="arrow-left" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="TableList">
+            <div class="dragscroll">
+                <div class="LoyaltyAdd">
+                    <form>
+                        <div class="TableList">
+                            <div class="dragscroll">
+                                <div class="form-group">
+                                    <div class="row m-0">
+                                        <div class="col-sm-2">
+                                            <label>Title</label>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label>English</label>
+                                            <input type="text" class="form-control" placeholder="Title" name="" id="">
+                                        </div>
+                                        <div class="col-sm-5 Arbic">
+                                            <label>الإنجليزية</label>
+                                            <input type="text" class="form-control" placeholder="Title" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group">
+                                    <div class="row m-0">
+                                        <div class="col-sm-2">
+                                            <label>Description	</label>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label>English</label>
+                                            <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                                        </div>
+                                        <div class="col-sm-5 Arbic">
+                                            <label>الإنجليزية</label>
+                                            <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group">
+                                    <div class="row  m-0">
+                                        <div class="col-sm-2">
+                                            <label>User Type</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label class="Radio">New User
+                                                 <input type="radio" value="NewUser" name="User" (change)="changeUser($event)" checked>
+                                                 <span class="Radiomark"></span>
+                                           </label>
+                                        </div>
+                                        <div class="col-sm-3"> 
+                                            <label class="Radio">Existed User
+                                                 <input type="radio" value="ExistedUser" name="User" (change)="changeUser($event)">
+                                                 <span class="Radiomark"></span>
+                                           </label>
+                                        </div>
+                                    </div>
+                                </div> 
+   
+                                <div class="UserNew" [hidden]="!newUserForm">
+                                    <div class="form-group">
+   
+                                        <div class="row  m-0">
+                                            <div class="col-sm-2">
+                                                <label>Offer Type</label>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label class="Radio">Percentage Based
+                                                     <input type="radio" value="Percentage" name="Type" (change)="changeBased($event)" checked>
+                                                     <span class="Radiomark"></span>
+                                               </label>
+                                            </div>
+                                            <div class="col-sm-3"> 
+                                                <label class="Radio">Item Based
+                                                     <input type="radio" value="Item" name="Type" (change)="changeBased($event)">
+                                                     <span class="Radiomark"></span>
+                                               </label>
+                                            </div>
+                                        </div>
+   
+                                        <div class="row PercentageBased  m-0" [hidden]="!basedForm">
+                                            <div class="col-sm-2">
+                                                <label>&nbsp;</label>
+                                            </div>
+                                            <div class="col-sm-5"> 
+                                                <input type="text" class="form-control" placeholder="Enter Percent">
+                                            </div>
+                                        </div> 
+   
+                                        <div class="row ItemBased PercentageBased m-0" [hidden]="basedForm">
+                                            <div class="col-sm-2">
+                                                <label>&nbsp;</label>
+                                            </div>
+                                            <div class="col-sm-5"> 
+                                                <div class="DishessBox">
+                                                   <input type="text" class="form-control" placeholder="Enter ">
+                                                    <!-- <div class="DishessHead">
+                                                        <span><i class="fa fa-search"></i></span>
+                                                        <input type="text" placeholder="Search menu items">
+                                                    </div>
+   
+                                                    <div class="DishessList">
+                                                        <figure>
+                                                            <img src="assets/images/Dishes-1.png">
+                                                        </figure>
+                                                        <h3>Healthy Oriental Rice with Lamb</h3>
+                                                        <p>AED 49</p>
+                                                        <label class="Checkbox">
+                                                             <input type="radio">
+                                                             <span class="checkmark"></span>
+                                                       </label>
+                                                   </div>
+                                                    <div class="DishessList">
+                                                        <figure>
+                                                            <img src="assets/images/Dishes-1.png">
+                                                        </figure>
+                                                        <h3>Healthy Oriental Rice with Lamb</h3>
+                                                        <p>AED 49</p>
+                                                        <label class="Checkbox">
+                                                             <input type="radio">
+                                                             <span class="checkmark"></span>
+                                                       </label>
+                                                   </div>
+                                                    <div class="DishessList">
+                                                        <figure>
+                                                            <img src="assets/images/Dishes-1.png">
+                                                        </figure>
+                                                        <h3>Healthy Oriental Rice with Lamb</h3>
+                                                        <p>AED 49</p>
+                                                        <label class="Checkbox">
+                                                             <input type="radio">
+                                                             <span class="checkmark"></span>
+                                                       </label>
+                                                   </div>
+                                                    <div class="DishessList">
+                                                        <figure>
+                                                            <img src="assets/images/Dishes-1.png">
+                                                        </figure>
+                                                        <h3>Healthy Oriental Rice with Lamb</h3>
+                                                        <p>AED 49</p>
+                                                        <label class="Checkbox">
+                                                             <input type="radio">
+                                                             <span class="checkmark"></span>
+                                                       </label>
+                                                   </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+   
+                                    </div>
+                               </div> 
+   
+                                <div class="ExistUser" [hidden]="newUserForm">
+   
+                                    <div class="row align-items-end  m-0">
+                                        <div class="col-sm-2">
+                                            <label>&nbsp;</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="ExistUserBox">
+                                                <div class="row  m-0">
+                                                    <div class="col-sm-12"> 
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="No. Of Visit">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6"> 
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="From">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6"> 
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="To">
+                                                        </div>
+                                                    </div>
+                                                </div>
+   
+                                                <div class="form-group">
+                                                    <div class="row  m-0">
+                                                        <div class="col-sm-12">
+                                                            <label>Offer Type</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label class="Radio">Percentage Based
+                                                                 <input type="radio" name="Offer" checked>
+                                                                 <span class="Radiomark"></span>
+                                                           </label>
+                                                        </div>
+                                                        <div class="col-sm-6"> 
+                                                            <label class="Radio">Item Based
+                                                                 <input type="radio" name="Offer">
+                                                                 <span class="Radiomark"></span>
+                                                           </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+   
+                                                <div class="row  m-0">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Enter Percent">
+                                                        </div>
+                                                    </div>
+                                                </div>
+   
+                                            </div>
+                                        </div>
+   
+                                        <div class="col-sm-2">
+                                            <a href="javascript:void(0);" class="More">Add More</a>
+                                            <!-- <button >Add More</button> -->
+                                        </div>
+                                    </div> 
+                               </div>  
+        
+                                <div class="form-group">
+                                    <div class="row m-0">
+                                        <button class="Button btnRound" [routerLink]="['/banner-management']" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

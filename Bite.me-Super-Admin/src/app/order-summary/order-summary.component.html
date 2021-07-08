@@ -1,0 +1,170 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Report Management</h4>
+    </div>
+    <div class="marginInner pb-3">
+        <div class="DisFlex pb-4">
+            <h4 class="Title">Order Summary</h4>
+            <div class="backArrow">
+                <a [routerLink]="['/report']" class="backBtn" ><img src="assets/images/arrow-left.svg" alt="arrow-left" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="TableList">
+            <div class="dragscroll">
+                <div class="DisFlex order-summary-date">
+                    <div class="Filter DisFlex">
+                        <h3 class="Title mr-3">Order Details</h3>
+                        <div class="form-group">
+                            <label>From Date </label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>To Date </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="download">
+                        <a href="javaScript:void(0)">
+                            <img src="assets/images/download.svg" alt="download" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="DisFlex brandSelection">
+                    <div class="Filter ">
+                        <div class="form-group">
+                            <label for="">Select Brand</label>
+                            <select class="form-control"> 
+                                <option>Burger King</option>
+                                <option>Burger King </option>
+                                <option>Burger King </option>
+                            </select>
+                            <p>Download the report as a .csv to see all details of your orders</p>
+                        </div>
+                    </div>
+                    <div class="TotalOrder">
+                        <h2>104 <span>Orders</span></h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="marginInner">
+        <div class="TableList">
+            <div class="dragscroll">
+                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Customer Id</th>
+                            <th>Customer Name</th>
+                            <th>Email Id</th>
+                            <th>Contact No. </th>
+                            <th>Order Id </th>
+                            <th>Order Amount </th>
+                            <th>Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2341</td>
+                            <td>VisHu</td>
+                            <td>Vishu@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>HUSFJK542</td>
+                            <td>AED 56.00</td>
+                            <td class="ActionImg">
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Reject">
+                                    <img src="assets/images/delete-bg.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                           <td>2341</td>
+                            <td>VisHu</td>
+                            <td>Vishu@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>HUSFJK542</td>
+                            <td>AED 56.00</td>
+                            <td class="ActionImg">
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Reject">
+                                    <img src="assets/images/delete-bg.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                           <td>2341</td>
+                            <td>VisHu</td>
+                            <td>Vishu@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>HUSFJK542</td>
+                            <td>AED 56.00</td>
+                            <td class="ActionImg">
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Reject">
+                                    <img src="assets/images/delete-bg.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                           <td>2341</td>
+                            <td>VisHu</td>
+                            <td>Vishu@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>HUSFJK542</td>
+                            <td>AED 56.00</td>
+                            <td class="ActionImg">
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Reject">
+                                    <img src="assets/images/delete-bg.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                           <td>2341</td>
+                            <td>VisHu</td>
+                            <td>Vishu@gmail.com</td>
+                            <td>9876543210</td>
+                            <td>HUSFJK542</td>
+                            <td>AED 56.00</td>
+                            <td class="ActionImg">
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Reject">
+                                    <img src="assets/images/delete-bg.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ModalBlock ModalBox">
+    <div id="Reject" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/images/remove.svg" alt=""></a>
+                        <h3>Delete</h3>
+                        <p>Are you sure you want to Delete this order summary?</p>
+                        <h4 class="mt-3">
+                            <a href="JavaScript:Void(0);" class="Button-alt" data-dismiss="modal">no</a>
+                            <a href="JavaScript:Void(0);" class="Button apply_btn ml-2" data-dismiss="modal">Yes</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

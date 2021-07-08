@@ -1,0 +1,122 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Report Management</h4>
+    </div>
+    <div class="marginInner pb-3">
+        <div class="DisFlex pb-4">
+            <h4 class="Title">    Menu Mix Report</h4>
+            <div class="backArrow">
+                <a [routerLink]="['/report']" class="backBtn" ><img src="assets/images/arrow-left.svg" alt="arrow-left" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="TableList">
+            <div class="dragscroll">
+                <div class="DisFlex order-summary-date" style="    padding-bottom: 17px;">
+                    <div class="timeFrame">
+                        <div class="Days">
+                            <ul class="DisFlex mt-0">
+                                <li class="active">This Week</li>
+                                <li>This Month</li>
+                                <li>This Year</li>
+                                <div class="sideDownIcon ml-2">
+									<a href="javaScript:void(0)" style="border: 1px solid #ccc;"><img src="assets/images/download.png" alt=""></a>
+								</div>
+                                <!-- <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <div class="Filter menuMix">
+                            <div class="form-group">
+                                <select class="form-control"> 
+                                    <option>All</option>
+                                    <option>About Afif sandwiches From </option>
+                                    <option>Burger King </option>
+                                    <option>About Afif  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="DisFlex brandSelection">
+                    <div class="Filter ">
+                        <div class="form-group">
+                            <label for="">Select Brand</label>
+                            <select class="form-control"> 
+                                <option>About Afif sandwiches From Beirut, Dubai Marina</option>
+                                <option>Burger King </option>
+                                <option>About Afif sandwiches From Beirut, Dubai Marina </option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="marginInner">
+        <div class="TableList">
+            <div class="dragscroll">
+                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Item name</th>
+                            <th>Item Id</th>
+                            <th>Count</th>
+                            <th>Cost </th>
+                            <th>Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Branch 1</td>
+                            <td>BRN15</td>
+                            <td>5</td>
+                            <td>AED 560</td>
+                            <td>AED 5600</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Branch 1</td>
+                            <td>BRN15</td>
+                            <td>5</td>
+                            <td>AED 560</td>
+                            <td>AED 5600</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Branch 1</td>
+                            <td>BRN15</td>
+                            <td>5</td>
+                            <td>AED 560</td>
+                            <td>AED 5600</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Branch 1</td>
+                            <td>BRN15</td>
+                            <td>5</td>
+                            <td>AED 560</td>
+                            <td>AED 5600</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Branch 1</td>
+                            <td>BRN15</td>
+                            <td>5</td>
+                            <td>AED 560</td>
+                            <td>AED 5600</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,452 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Dashboard</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DashboardArea">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a [routerLink]="['/order-today']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/images/4.png" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">92</h2>
+									<h4>Orders today </h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>
+                <div class="col-sm-4">
+                    <a [routerLink]="['/cancelled-order']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/images/5.png" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">0</h2>
+									<h4>Cancelled orders today </h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>  
+                <div class="col-sm-4">
+                    <a [routerLink]="['/ofline-restaurant']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/images/6.png" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">4</h2>
+									<h4>Offline restaurants now</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>   
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-brand']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/images/2.png" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">24</h2>
+									<h4>Active Brands</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>   
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-store']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/images/1.png" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">4</h2>
+									<h4>Active Stores</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>   
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-driver']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/images/3.png" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">4</h2>
+									<h4>Active Drivers</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>    
+                <div class="col-sm-4">
+                    <a [routerLink]="['/ofline-driver']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/images/3.png" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">4</h2>
+									<h4>Offline Drivers</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>  
+            </div>
+            <!-- <div class="row">
+                <div class="col-sm-6">
+                    <div class="BusinessBox">
+                        <h2>Order <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+                        <article>
+                            <div class="BusinessTotal">
+                                <p>Total</p>
+                                <h3>636</h3>
+                            </div>
+                            <div class="BusinessTotal">
+                                <p>Cancelled</p>
+                                <h3>0</h3>
+                            </div>
+                        </article>
+                        <figure>
+                            <img src="assets/images/Graph-1.png">
+                        </figure>
+                        <figcaption>
+                            <a href="javascript:void(0);">see all orders</a>
+                        </figcaption>
+                    </div>
+                </div>
+                
+            </div> -->
+           
+
+            
+		<div class="BusinessArea">
+			<div class="BusinessHead">
+				<div class="BusinessLeft">
+					<ul class="nav nav-tabs">
+						
+					  	<li class="nav-item">
+					    	<a class="nav-link active" data-toggle="tab" href="#Business">Business summary</a>
+					  	</li>
+					  	<li class="nav-item">
+					    	<a class="nav-link" data-toggle="tab" href="#Delivery">Delivery summary</a>
+					  	</li>
+					  	<li class="nav-item">
+					    	<a class="nav-link" data-toggle="tab" href="#Loyality">Loyality</a>
+					  	</li>
+					</ul>
+				</div>
+				<div class="BusinessRight" style="position: relative;">
+					<!-- <div class="SwitchText">
+						<label class="Switch">
+						  	<input type="checkbox">
+						 	<span class="slider"></span> 
+						</label>
+						<p> Comparison</p>
+					</div> -->
+					<div class="SwitchText">
+						<div id="dvPassport1">
+							<div class="DateBox">
+								<span id="Close" (click)="Close()">&times;</span>
+								<div class="Date">
+									<label>From</label>
+									<input type="date">
+								</div>
+								<div class="Date">
+									<label>To</label>
+									<input type="date">
+								</div>
+								<div class="Date">
+									<label>&nbsp;</label>
+									<button>Apply</button>
+								</div>
+							</div>
+						</div>
+						<label class="Switch">
+							<input type="checkbox" [checked]="myVar1" (change)="changeDate($event)" (change)="myVar1 = !myVar1" />
+							<span class="slider"></span>
+						</label>
+						<p> Comparison</p>
+					</div>
+					
+                    <div class="timeFrame">
+                        <div class="Days">
+                            <ul class="DisFlex">
+                                <li class="active">This Week</li>
+                                <li>This Month</li>
+                                <li>This Year</li>
+                                <div class="sideDownIcon ml-2">
+									<a href="javaScript:void(0)"><img src="assets/images/download.png" alt=""></a>
+								</div>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+			</div>
+ 
+			<div class="tab-content">
+
+			  	<div class="tab-pane active" id="Business">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<!-- <h2>Order <a href="javascript:void(0);" class="tooltipss"><img src="assets/images/information.png"><span>Order Info</span>  </a></h2> -->
+								<h2>Order <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								 
+
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>636</h3>
+									</div>
+									<div class="BusinessTotal">
+										<p>Cancelled</p>
+										<h3>0</h3>
+									</div>
+								</article>
+								<figure> 
+									<!-- <img src="assets/images/Graph-1.png"> -->
+									<div id="chartdiv" style="height: 314px;"></div>
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+								</figure>
+								<figcaption>
+									<a href="javascript:void(0);">see all orders</a>
+								</figcaption>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Revenue <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>AED 43 </h3>
+									</div>
+									<div class="BusinessTotal">
+										<p>Cancelled</p>
+										<h3>0</h3>
+									</div>
+								</article>
+								<figure> 
+									<!-- <img src="assets/images/Graph-1.png"> -->
+									<div id="chartdiv2" style="height: 314px;"></div>
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+								</figure>
+								<figcaption>
+									 
+								</figcaption>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Average Order Value <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>AED 43 <span>/ revenue per order</span></h3>
+									</div>
+									 
+								</article>
+								<figure> 
+									<!-- <img src="assets/images/Graph-1.png"> -->
+									<div id="chartdiv3" style="height: 314px;"></div>
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+								</figure>
+								<figcaption>
+									 
+								</figcaption>
+							</div>
+						</div>
+					</div>
+			  	</div>
+			  	
+			  	<div class="tab-pane fade" id="Delivery">
+ 					<div class="row">
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Deliveries <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>636</h3>
+									</div>
+									<div class="BusinessTotal">
+										<p>Cancelled</p>
+										<h3>0</h3>
+									</div>
+								</article>
+								<figure> 
+									<!-- <img src="assets/images/Graph-1.png"> -->
+									<div id="chartdiv4" style="height: 314px;"></div>
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+								</figure>
+								<figcaption>
+									<a href="javascript:void(0);">see all orders</a>
+								</figcaption>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Delivery Revenue <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>AED 43 </h3>
+									</div>
+									<div class="BusinessTotal">
+										<p>Cancelled</p>
+										<h3>0</h3>
+									</div>
+								</article>
+								<figure> 
+									<div id="chartdiv5" style="height: 314px;"></div>
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+									<!-- <img src="assets/images/Graph-1.png"> -->
+								</figure>
+								<figcaption>
+									 
+								</figcaption>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Average Delivery Value <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>AED 43 <span>/ revenue per order</span></h3>
+									</div>
+									 
+								</article>
+								<figure> 
+									<div id="chartdiv6" style="height: 314px;"></div>
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+									<!-- <img src="assets/images/Graph-1.png"> -->
+								</figure>
+								<figcaption>
+									 
+								</figcaption>
+							</div>
+						</div>
+					</div>
+			  	</div>
+			  	
+			  	<div class="tab-pane fade" id="Loyality">
+ 					<div class="row">
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Loyalties <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>636</h3>
+									</div>
+									<div class="BusinessTotal">
+										<p>Cancelled</p>
+										<h3>0</h3>
+									</div>
+								</article>
+								<figure> 
+									<div id="chartdiv7" style="height: 314px;"></div>
+									<!-- <img src="assets/images/Graph-1.png"> -->
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+								</figure>
+								<figcaption>
+									<a href="javascript:void(0);">see all orders</a>
+								</figcaption>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Loyality Revenue <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>AED 43 </h3>
+									</div>
+									<div class="BusinessTotal">
+										<p>Cancelled</p>
+										<h3>0</h3>
+									</div>
+								</article>
+								<figure> 
+									<div id="chartdiv8" style="height: 314px;"></div>
+									<!-- <img src="assets/images/Graph-1.png"> -->
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+								</figure>
+								<figcaption>  
+									 
+								</figcaption>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="BusinessBox">
+								<h2>Average Loyality Value <a href="javascript:void(0);"><img src="assets/images/information.png"></a></h2>
+								<article>
+									<div class="BusinessTotal">
+										<p>Total</p>
+										<h3>AED 43 <span>/ revenue per order</span></h3>
+									</div> 
+								</article>
+								<figure> 
+									<div id="chartdiv9" style="height: 314px;"></div>
+									<!-- <img src="assets/images/Graph-1.png"> -->
+									<div class="barLine">
+										<h3 class="Title"><span></span>Dec 23 - Dec 29</h3>
+									</div>
+								</figure>
+								<figcaption>
+									 
+								</figcaption>
+							</div>
+						</div>
+					</div>
+			  	</div>
+
+				
+			</div>
+		</div>
+        </div>
+    </div>
+</div>

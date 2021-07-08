@@ -1,0 +1,446 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Brand Management</h4>
+    </div>
+    <div class="marginInner  pb-3">
+        <div class="TableList">
+            <div class="dragscroll">
+                <div class="ProfileArea">
+                    <aside>
+                        <div class="ProfileHead profilePencil">
+                            <h3>
+                                <span>Personal Info</span>
+                                <a href="javaScript:void(0)"><img src="assets/images/pencil.svg" alt="pencil" class="img-fluid"></a>
+                            </h3>
+                            <div class="backArrow">
+                                <a [routerLink]="['/brand-management']" class="backBtn" ><img src="assets/images/arrow-left.svg" alt="arrow-left" class="img-fluid"></a>
+                            </div>
+                            <!-- <h4><a [routerLink]="['/']">Logout <img src="assets/images/logout.png"></a></h4> -->
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="Label">Name </span>
+                                <span class="Text">Abdul</span>
+                            </li>
+                            <li>
+                                <span class="Label">Mobile No. </span>
+                                <span class="Text">+971 9876543210</span>
+                            </li>
+                            <li>
+                                <span class="Label">Email </span>
+                                <span class="text">abdul@gmail.com</span>
+                            </li>
+                            <li>
+                                <span class="Label">Contact Role </span>
+                                <span class="Text">Owner</span>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <aside>
+                        <div class="ProfileHead profilePencil DisFlex">
+                            <h3 class="">
+                                <span>Brand Detail</span>
+                                <a href="javaScript:void(0)"><img src="assets/images/pencil.svg" alt="pencil" class="img-fluid"></a>
+                            </h3>
+                            <div class="sideBtn">
+                                <a [routerLink]="['/brand-info-qr']" class="Button btnRound" >Generate QR Code</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="Label">Brand Logo </span>
+                                <span class="Text TextSmall pad40">
+                                    <div class="UploadImages">
+                                        <span><img src="assets/images/camera2.png"></span>
+                                        <h6>Upload Brand Logo</h6>
+                                        <input type="file">
+                                    </div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="Label">Brand Image </span>
+                                <span class="Text pad40">
+                                    <div class="UploadImages">
+                                        <span><img src="assets/images/camera2.png"></span>
+                                        <h6>Upload Store Image</h6>
+                                        <p>Image Size : 400 x 300 px / Image formats : jpg, png / 5MB Max.</p>
+                                        <input type="file">
+                                    </div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="Label">Brand Name  </span>
+                                <span class="Text">The Zaika</span>
+                            </li>
+                            <li>
+                                <span class="Label">Brand Country </span>
+                                <span class="Text">Dubai</span>
+                            </li>
+                            <li>
+                                <span class="Label">Cuisine </span>
+                                <span class="Text">Indian, Italian, Chinese</span>
+                            </li>
+                            <li>
+                                <span class="Label">Services </span>
+                                <span class="Text">Full Service</span>
+                            </li>
+                            <li>
+                                <span class="Label">Accepts </span>
+                                <span class="Text">Delivery</span>
+                            </li>
+                            <li>
+                                <span class="Label">Address </span>
+                                <span class="Text">Downtown Burj khalifa</span>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- <aside>
+                        <div class="ProfileHead ">
+                            <h3>
+                                <span>Commission Rate</span>
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="Label" style="margin-top: 9px">Enter  </span>
+                                <span class="Text">
+                                    <div class="form-group" style="width: 250px;">
+                                        <input type="text" class="form-control" placeholder="Commission in %" name="" id="">
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+                    </aside> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marginInner">
+        <div class="TableList">
+            <div class="dragscroll">
+                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Store Name</th>
+                            <th>Store Id</th>
+                            <th>Store Location</th>
+                            <th style="min-width: 180px;">Commission Rate</th>
+                            <th style="min-width: 160px;">VAT</th>
+                            <th>Login </th>
+                            <th>Action</th>
+                            <th>Approval</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                            <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                        <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><a [routerLink]="['/brand-info-details']">Burger King</a></td>
+                            <td>Bur432</td>
+                            <td>Intertek Saudi Arabia Ltd.</td>
+                             <td class=" ">
+                                <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Commission" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="VAT" aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-success" type="button">save</button>
+                                    </div>
+                                </div>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound smallBtn">Login</a></td>
+                            <td class="">
+                                <label class="switch ">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                           <td><a href="javaScipt:void(0)" class="Button btnRound btnGreen smallBtn">Approved</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

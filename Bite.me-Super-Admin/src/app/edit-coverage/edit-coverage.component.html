@@ -1,0 +1,128 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+       <div class="mainHeadInner DisFlex">
+            <div>
+                <h4 class="Title">Coverage Areas    </h4>
+                <p>Mezza House, Downtown Burj Khalifa</p>
+            </div>
+            <form>
+				<!-- <label>Type</label> -->
+				<select class="form-control">
+					<option>Brand </option>
+					<option>Branches </option>
+				</select>
+			</form> 
+       </div>
+    </div>
+    <div class="marginInner">
+        <div class="DisFlex pb-4">
+            <h4 class="Title">Add Coverage Area</h4>
+            <div class="DisFlex FixSearch">
+                <a [routerLink]="['/coverage-parameter']" class="Button " >Next</a>
+            </div>
+        </div>
+        <div class="TableList">
+            
+            <div class="dragscroll">
+                <div class="SmallerWapper"> 
+
+                    
+                    <div class="SmallerWapperBox">
+                        <div class="CoverageArea">
+        
+                            <form>
+                                <div class="CoverageAdd">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="CoverageAddLeft">
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="Landmark">
+                                                            <label>Edit Coverage Area</label>
+                                                            <input type="text" class="form-control" placeholder="Intertek Saudi Arabia Ltd. Office No. 101.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <img src="assets/images/map2.png">
+                                                    </div>
+                                                </div>
+        
+                                                <!-- <button [routerLink]="['/operations-coverage-add-parameters']">Save</button> -->
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-sm-6">
+                                            <div class="CoverageAddRight">
+        
+                                                <div class="LoyaltyAdd"> 
+                                                    <div class="ParametersAdd">
+                                                        <div class="form-group">
+                                                            <label>Location</label>
+                                                            <input type="text" class="form-control" placeholder="Enter Location">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Delivery charges</label>
+                                                            <input type="text" class="form-control" placeholder="Enter Delivery charges">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Delivery duration</label>
+                                                            <input type="text" class="form-control" placeholder="Enter Delivery duration">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                   
+        
+                                                <!-- <ul>
+                                                    <li>
+                                                        <h3>Listing of Areas</h3>
+                                                        <label class="Checkbox"> Select All
+                                                              <input type="checkbox">
+                                                              <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Lorep Ipsum Area 1</h4>
+                                                        <label class="Checkbox">
+                                                              <input type="checkbox">
+                                                              <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Lorep Ipsum Area 2</h4>
+                                                        <label class="Checkbox">
+                                                              <input type="checkbox">
+                                                              <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Lorep Ipsum Area 3</h4>
+                                                        <label class="Checkbox">
+                                                              <input type="checkbox">
+                                                              <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Lorep Ipsum Area 4</h4>
+                                                        <label class="Checkbox">
+                                                              <input type="checkbox">
+                                                              <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

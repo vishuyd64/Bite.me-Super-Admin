@@ -1,0 +1,239 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead ">
+        <h4 class="Title">User Management</h4>
+        
+    </div>
+    <div class="marginInner">
+        <div class="sideBtn DisFlex FixSearch">
+            <div class="form-group" style="position: relative;">
+                <input type="text" class="form-control" style="padding-right: 30px;" placeholder="Search" name="" id="">
+                <a href="javaScript:void(0)" class="SearchAbsolute"><img src="assets/images/search.svg" style="width: 16px;" alt="rotate-left" class="img-fluid"></a>
+            </div>
+            <a href="javaScript:void(0)" class="Button btnRound" >Download CSV</a>
+        </div>
+        <div class="TableList">
+            <div class="dragscroll">
+                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Customer Id</th>
+                            <th>Customer Name</th>
+                            <th>Email Id</th>
+                            <th>Address</th>
+                            <th>Area </th>
+                            <th>Contact No. </th>
+                            <th>Total Orders</th>
+                            <th>Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                            <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                            <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>AB572</td>
+                            <td>Vishu</td>
+                            <td>vishu@gmail.com</td>
+                            <td>H123, Burj Khalifa</td>
+                            <td>Downtown</td>
+                            <td>9876543210</td>
+                            <td>222</td>
+                           <td class="ActionImg">
+                                <a [routerLink]="['/user-detail']">
+                                    <img src="assets/images/eye.svg" alt="">
+                                </a>
+                                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Ban">
+                                    <img src="assets/images/ban.svg" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="ModalBlock ModalBox">
+    <div id="Ban" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/images/remove.svg" alt=""></a>
+                        <h3>Block</h3>
+                        <p>Are you sure you want to block this user?</p>
+                        <h4 class="mt-3">
+                            <a href="JavaScript:Void(0);" class="Button-alt" data-dismiss="modal">no</a>
+                            <a href="JavaScript:Void(0);" class="Button apply_btn ml-2" data-dismiss="modal">Yes</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

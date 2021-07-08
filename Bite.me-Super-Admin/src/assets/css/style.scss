@@ -1,0 +1,1696 @@
+@charset "utf-8";
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px;
+    color: #3a3a3a;
+    font-weight: 400;
+    background-color: #EDF0F7;
+    /* overflow-x: hidden; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clr,
+.clear {
+    clear: both;
+}
+
+header,
+footer,
+aside,
+article,
+section,
+detail,
+nav,
+figure {
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none !important;
+    outline: none;
+}
+
+img {
+    border: 0;
+    outline: none;
+    max-width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea,
+input[type="button"] {
+    max-width: 100%;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+table {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.border_none {
+    border: none !important
+}
+
+.navbar-toggle {
+    background-color: #fff !important;
+}
+
+input[type="date"] {
+    text-transform: uppercase !important;
+}
+
+.Flex {
+    display: flex;
+}
+
+.fixed_header {
+    background: #EEEEEE !important;
+    box-shadow: 2px 2px 4px #EA209661;
+    /* padding: 15px 0 0px 0; */
+    transition: all 0.3s;
+    z-index: 999;
+}
+.fixed_header .navbar-header a span {
+    display: block;
+    padding-top: 8px;
+}
+.tc{
+    text-transform: capitalize;
+}
+.Button {
+    border: none;
+    padding: 8px 38px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    background-color: #EA2096;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid #EA2096;
+}
+.Button.Btns {
+    padding: 8px 18px;
+}
+
+.Button-alt {
+    border: none;
+    padding: 8px 38px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    font-size: 15px;
+    color: #EA2096;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid #EA2096;
+}
+.btnRound{
+    border-radius: 28px;
+}
+
+.Button:hover {
+    background-color: #fff;
+    color: #EA2096;
+}
+.Button-alt:hover {
+    background-color: #EA2096 !important;
+    color: #fff;
+}
+.btnGreen{
+    background-color: #57C453;
+    border: 1px solid #57C453;
+}
+.btnGreen:hover{
+    color: #57C453;
+}
+.btnOrange{
+    background-color: #ffa237;
+    border: 1px solid #ffa237;
+}
+.btnOrange:hover{
+    color: #ffa237;
+}
+.btnRed{
+    background-color: #f33a53;
+    border: 1px solid #f33a53;
+}
+.btnRed:hover{
+    color: #f33a53;
+}
+.smallBtn{
+    padding: 8px 18px;
+}
+
+
+.LoginArea {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    padding-top: 100px;
+    // background-image: url('assets/images/bg.jpg');
+}
+.LoginArea .LoginBox {
+    background-color: #fff;
+    padding: 75px 35px 40px;
+    max-width: 390px;
+    margin: auto;
+    width: 95%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 12%);
+    -webkit-box-shadow: 0 2px 3px rgb(0 0 0 / 12%);
+}
+
+.LoginArea .LoginBox h5 {
+    text-align: center;
+    margin: 0 0 7px;
+    font-size: 23px;
+    font-weight: 600;
+    // color: #84898E;
+}
+
+.LoginArea .LoginBox h6 {
+    text-align: center;
+    font-size: 15px;
+    color: #84898E;
+    line-height: 19px;
+}
+
+.LoginArea .LoginBox .form-group {
+    position: relative;
+    margin: 0 0 20px 0;
+}
+
+.LoginArea .LoginBox .form-group label {
+    font-weight: 400;
+    color: #17222c;
+    font-size: 14px;
+    display: block;
+    font-family: Roboto;
+}
+
+.LoginArea .LoginBox .form-group label sup {
+    color: #cc0909;
+    font-size: 18px;
+    top: -2px;
+}
+
+.LoginArea .LoginBox .form-group .form-control {
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    height: 40px;
+    padding: 2px 10px 2px 0;
+    padding-right: 45px;
+    color: #000;
+    font-size: 14px;
+    background: transparent;
+    border-bottom: 1px solid;
+}
+.LoginArea  ::-webkit-input-placeholder { color:#555 !important; }
+
+.LoginArea .LoginBox .form-group .Icon {
+    width: 34px;
+    height: 34px;
+    background-color: #d4d4d4;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 4px;
+    position: absolute;
+    left: 4px;
+    z-index: 100;
+    top: 28px;
+    color: #000;
+}
+
+.LoginArea .LoginBox .Checkboxs {
+    margin: 40px 0 0px 0;
+    text-align: center;
+}
+
+.LoginArea .LoginBox .Checkboxs a {
+    color: #45AFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    display: block;
+}
+.LoginArea .LoginBox .Checkboxs a.requestBtn{
+    color: #CCCCCC;
+    padding-bottom: 20px;
+}
+
+.LoginArea .LoginBox .Checkboxs a:hover {
+    color: #000;
+}
+
+.LoginArea .LoginBox button,
+.LoginArea .LoginBox a.Login {
+    border: none;
+    padding: 10px 40px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    background-color:#EA2096;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    width: 100%;
+    margin-top:  30px;
+    /* border-radius:50px */
+}
+
+.LoginArea .LoginBox button:hover,
+.LoginArea .LoginBox a.Login:hover {
+    background-color: #EA2096;
+}
+.logoMainImg{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: #EA2096;
+    top: -42px;
+    left: 39%;
+    border-radius: 50%;
+}
+.LoginBox p {
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    padding: 25px 0;
+}
+.IconEye {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+}
+
+
+.SidenavBar {
+    height: calc(100% - 0px);
+    position: fixed;
+    width: 300px;
+    /* top: 60px; */
+    padding: 0;
+    overflow: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    background-color: #2D3645;
+    z-index: 999;
+    transition: 0.2s all ease-in-out;
+}
+
+.SidenavBar::-webkit-scrollbar-track {
+    background: #bbb;
+    border-radius: 0
+}
+
+.SidenavBar::-webkit-scrollbar-thumb {
+    background-color: #EA2096;
+    border-radius: 0;
+    transition: background-color 0.2s linear, width 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s linear, width 0.2s ease-in-out;
+}
+
+.SidenavBar::-webkit-scrollbar {
+    width: 0px;
+    border-radius: 0
+}
+
+.SidenavBar ul {
+    margin: 0
+}
+
+.SidenavBar ul li {
+    margin: 0;
+    padding: 8px 0px 0px 0px;
+    position: relative;
+    transition: 0.2s all ease-in-out;
+}
+
+.SidenavBar ul li a {
+    display: flex;
+    cursor: pointer;
+    padding: 4px 12px 4px 24px;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.SidenavBar ul li a span {
+    font-size: 25px;
+    margin-right: 10px;
+}
+.SidenavBar ul li a span img{
+    filter: brightness(0) invert(1);
+}
+.SidenavBar ul li.active a span img{
+    filter: inherit;
+}
+.SidenavBar ul li:hover a span img{
+    filter: inherit;
+    transition: 0.2s all ease-in-out;
+}
+.faImg {
+    width: 17px !important;
+    display: block;
+}
+.faImg img{
+    width: 100%;
+}
+.faImg2{
+    width: 60px !important;
+    height: 60px;
+}
+.Logo{
+    padding: 25px 20px 10px 20px;
+}
+.Logo a{
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+.Logo a img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.Logo a.aNote{
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+.SidenavBar ul li a p{
+    margin-top: 7px;
+}
+
+.SidenavBar ul li.active a,
+.SidenavBar ul li a:hover {
+    // background-color: #EA2096;
+    color: #EA2096;
+}
+.SidenavBar ul li.active a::after,
+.SidenavBar ul li a:hover::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #EA2096;
+    right: 0;
+}
+
+.MainMargin{
+    padding-left: 300px;
+}
+.marginInner{
+}
+.Title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #201e1f;
+}
+.mainHead{
+    margin: 0px 10px 30px 70px;
+    border-bottom: 1px solid;
+    padding: 40px 70px 40px 0;
+}
+.marginInner{
+    margin: 10px 70px 10px 70px;
+    padding-bottom: 100px;
+}
+.DashboardArea aside{
+    padding: 22px 20px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 25px;
+}
+.DashboardArea aside h2{
+    font-size: 38px;
+    color: #221C46;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.DashboardArea aside h4{
+    font-size: 14px;
+    color: #B4B8AD;
+}
+
+.TableList table {
+    border: 0;
+}
+.TableList  {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 6px #dee1e7
+}
+.TableList .dragscroll{
+    // padding: 20px;
+    // background: #fff;
+    // box-shadow:0 0 6px #DEE1E7;
+    overflow: auto;
+}
+
+.TableList table tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+.TableList table tr:hover {
+    /* background: #c7c7c7; */
+    background-color: #ea20960f;
+    transition: background-color .3s linear;
+}
+
+.TableList table tr th,
+.TableList table tr td {
+    padding: 10px 10px;
+    border: 0;
+}
+
+.TableList table tr th {
+    background-color: #F3F5F9;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #201E1F;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    text-align: center;
+    padding: 15px 20px;
+    white-space: nowrap;
+}
+
+.TableList table tr td {
+    font-weight: 500;
+    color: #404040;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #DBDBDB;
+    padding: 15px 20px;
+    white-space: nowrap;
+}
+
+.TableList table tr td a:hover {
+    // color: #fff;
+}
+
+.TableList table tr th:last-child,
+.TableList table tr td:last-child {
+    text-align: center;
+    min-width: 105px
+}
+.TableList table tr td:last-child {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.TableList table tr td:last-child a {
+    // color: #fff;
+    margin: 0 5px;
+    font-size: 13px;
+    display: inline-block
+}
+
+.TableList table tr td:last-child a:hover {
+    // color: #000
+}
+.ActionImg img{
+    width: 22px;
+}
+.ActionImg a{
+    margin: 0 5px;
+}
+.sideBtn{
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    padding: 2px 0 3px 50px;
+    font-weight: 400;
+    font-size: 12px;
+    // color: #66CC63;
+    color: #201e1f;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    height: 21px;
+    border-radius: 50px;
+    width: 40px;
+    border: 1px solid #EA2096;
+}
+
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 3px;
+    bottom: 0;
+    top: 0;
+    background-color: #EA2096;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+    margin: auto
+}
+
+.switch input:checked+.slider {
+    background-color: #EA2096
+    // background-color: #66CC63
+}
+
+.switch input:checked+.slider:before {
+    -webkit-transform: translateX(19px);
+    transform: translateX(19px);
+    background-color: #fff
+}
+
+.DisFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.timeFrame{
+    color: #A1A89E;
+}
+.Days ul{
+    margin-top: 10px;
+}
+.Days ul li{
+    border: 1px solid #ccc;
+    padding: 7px 18px;
+    background-color: #fff;
+    color: #252F40;
+    cursor: pointer;
+}
+.Days ul li:last-child{
+    padding: 7px 15px;
+}
+.Days ul li.active{
+    color: #EA2096;
+    background-color: #fff;
+}
+
+.Filter .form-group {
+    margin: 0 15px 20px 0;
+    display: inline-block;
+}
+
+.Filter .form-group:last-child {
+    margin: 0 0 20px 0!important
+}
+
+.Filter .form-group label {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3B4A54;
+}
+
+.Filter .form-group .form-control {
+    height: 40px;
+    line-height: 25px;
+    padding: 8px 10px;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 10px 0 0;
+    box-shadow: none;
+    color: #3B4A54;
+    border-radius: 4px;
+}
+.FilterOrder .form-group .form-control{
+    width: 200px;
+}
+.FilterOrder label{
+    color: #3B4A54;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.secondRight li img{
+    width: 22px;
+}
+.secondRight li {
+    margin-left: 40px;
+}
+.secondRight li a {
+    color: #6c6d70;
+}
+td span.circle{
+    width: 10px;
+    height: 10px;
+    background: #C9C9C9;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.driverData aside{
+    // background: #ADB3C1;
+    background: #fff;
+    padding: 30px;
+    color: #221C46;
+    border-radius: 47px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.driverData aside .dataHead h3{
+    // border-bottom: 1px solid;
+    padding-bottom: 10px;
+    color: #221C46;
+}
+.driverData aside .dataFoot h3{
+    font-size: 20px;
+}
+.driverData aside .dataFoot{
+    padding-top: 20px;
+}
+.driverData aside .dataFoot h3 span{
+    display: block;
+    padding-top: 8px;
+}
+
+.downBtn a{
+    position: absolute;
+    bottom: 0;
+}
+.liveTracking{
+    padding: 15px 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.liveTracking h3.Title{
+    margin-bottom: 0;
+}
+.liveTracking h3 span{
+    font-weight: 300;
+}
+// map 
+.gm-style .default-card{
+    display: none !important;
+}
+.place-card .place-card-large{
+    display: none !important;
+}
+.my-map .place-card .place-card-large{
+    display: none !important;
+}
+.gm-style .place-card,
+.gm-style .default-card,
+.gm-style .directions-card {
+  display: none !important;
+}
+
+.satellite ul{
+    background-color: #fff;
+    display: inline-flex;
+    padding: 9px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.satellite ul li{
+    color: #201e1f99;
+    padding: 0 40px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.satellite ul li:first-child{
+    border-right: 1px solid;
+}
+.satellite ul li.active{
+    color: #201e1f;
+}
+.DriverMap{
+    position: relative;
+}
+.satellite ul{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.satelliteSearch{
+    position: absolute;
+    width: 370px;
+    top: 10px;
+    left: 29%;
+}
+.satelliteSearch input{
+    border-radius: 59px;
+    padding: 10px 30px;
+    height: auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    font-size: 18px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ea2096;
+    // box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.mapLocation{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    text-align: center;
+}
+.mapLocation .driverDetail{
+    background: #fff;
+    border-radius: 18px;
+    padding: 12px 12px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    text-align: left;
+    margin-bottom: 20px;
+}
+.mapLocation .driverDetail h6{
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+.mapLocation .driverDetail h6 span{
+    font-weight: 400;
+}
+.mapLocation .driverDetail a{
+    margin-top: 6px;
+    color: #ea2096;
+}
+
+.square-bottom::after {
+content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: #fff;
+    left: 45%;
+    transform: rotate(225deg);
+    box-shadow: -1px -3px 3px 0px rgb(0 0 0 / 16%)
+}
+.driverDetail-right h5{
+    // opacity: 0.36;
+    font-size: 9px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #201e1f99;
+}
+.driverDetail-right h5 span{
+    padding-top: 2px;
+    color: #201e1f;
+    display: block;
+}
+.mapLocation img{
+    width: 50px;
+}
+.driverDetail.square.square-bottom.clickDisplay{
+    display: none;
+}
+.backBtn{
+    background: #000;
+    padding: 7px;
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backBtn img{
+    width: 17px;
+}
+.tdProfile img{
+    width: 64px;
+}
+.CreateOffer{
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: #ffffff;
+}
+.CreateOffer .DisFlex{
+    padding: 25px 20px 20px 27px;
+    border-bottom: 1px solid #c9c5c5;
+}
+.CreateOffer .DisFlex h4{
+    margin-bottom: 0;
+}
+.NewOffer{
+    padding: 33px 70px 20px 27px;
+}
+.NewOffer h5{
+    font-size: 20px;
+    color: #201e1f;
+}
+.NewOffer .row .form-group{
+    margin-bottom: 0;
+}
+.NewOffer .row.rowBottom{
+    align-items: center;
+    margin-bottom: 2rem;
+}
+// tabs area 
+.nav-tabs{
+    border-bottom: 0;
+}
+.Tabcontainer .nav-tabs li a{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    color: #201e1f99;
+    padding: 24px 24px 19px;
+    display: block;
+}
+.Tabcontainer .nav-tabs li a.active.show{
+    color: #ea2096;
+    border-bottom: 3px solid;
+}
+.tabFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dee2e6;
+}
+.tab-sideBtn{
+    margin-right: 28px;
+}
+textarea{
+    resize: none;
+}
+input[type="file"]{
+    padding: 3px !important;
+
+}
+
+// report started 
+.reportManage{
+    background: #fff;
+}
+
+.reportMain .reportIcon img{
+    width: 22px;
+}
+.reportMain .reportText h3{
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #2d3645;
+}
+.reportMain .reportText p{
+    color: #0000008a;
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+}
+.reportMain .reportArw img{
+    width: 13px;
+}
+.reportMain {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    color: #e7eaf1;
+    border-bottom: 1px solid rgb(237, 240, 247);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.reportMain .reportIcon{
+    color: #6c7281;
+    display: inline-flex;
+    min-width: 56px;
+    flex-shrink: 0;
+}
+.reportMain .reportArw{
+    color: #6c7281;
+    display: inline-flex;
+    min-width: 56px;
+    flex-shrink: 0;
+}
+.reportMain .reportText {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.order-summary-date{
+    border-bottom: 1px solid #70707061;
+}
+.brandSelection{
+    padding-top: 25px;
+}
+.brandSelection .Filter label{
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    font-size: 15px;
+    color: #201e1f;
+}
+.brandSelection p{
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #201e1f94;
+    line-height: 1.33;
+    padding-top: 13px;
+}
+.brandSelection .TotalOrder h2{
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    color: #201e1f;
+    letter-spacing: normal;
+    padding-right: 40px;
+}
+.brandSelection .TotalOrder h2 span{
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #201e1f94;
+    font-style: normal;
+    display: block;
+    line-height: 1.37;
+    letter-spacing: normal;
+}
+.eodData h3{
+    font-size: 15px;
+}
+.eodData h3 strong{
+    font-weight: 500;
+}
+.eodData h3 span{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    color: #201e1f94;
+    text-align: right;
+    padding-top: 10px;
+}
+.Disclaimer p{
+    font-size: 12px;
+    color: #3a3a3a;
+    margin: 10px 70px 10px 70px;
+}
+.menuMix.Filter .form-group:last-child{
+    margin-bottom: 0 !important;
+}
+.downloadCustomer a{
+    display: block;
+    font-size: 15px;
+    color: #000;
+}
+.downloadCustomer a img{
+    width: 16px;
+    margin-right: 10px;
+}
+.customerSearch{
+    position: relative;
+}
+.customerSearch form span {
+    position: absolute;
+    top: 7px;
+    font-size: 17px;
+    color: #676767;
+}
+.customerSearch form input {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #676767;
+    background-color: transparent;
+    width: 250px;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+    outline: none;
+}
+.searchAll p{
+    font-size: 15px;
+    font-weight: 500;
+    width: -webkit-fill-available;
+}
+
+
+
+
+
+
+// brand info started 
+.ProfileArea aside+aside{margin:50px 0 0 0}
+.ProfileArea aside .ProfileHead{display:flex;justify-content:space-between;margin:0 0 15px 0}
+.ProfileArea aside .ProfileHead h3 span{background-color:#d9d9d9;padding:10px 20px;display:inline-block;font-size:18px}
+.ProfileArea aside .ProfileHead h4 a{background-color:#fdd1d1;padding:10px 16px;display:inline-block;font-size:18px;color:#e62121;font-weight:500}
+.ProfileArea aside .ProfileHead h4 a img{width:20px;margin:0 0 0 10px}
+.ProfileArea aside ul li{display:flex;margin:0 0 15px 0;font-size:14px}
+.ProfileArea aside ul li span.Label{min-width:150px;font-weight:500;color:#000;position:relative;margin:0 15px 0 0}
+.ProfileArea aside ul li span.Label:after{content:':';position:absolute;right:0}
+.ProfileArea aside ul li span.Text{width:100%;}
+.profilePencil h3 a{
+    display: inline-block;
+    margin-left: 20px;
+}
+.profilePencil h3 a img{
+    width: 24px;
+}
+.UploadImages{background-color:#f7f8f8;border:1px dotted #b9b9b9;text-align:center;padding:30px 0;position:relative}
+.UploadImages span{display:inline-block;width:70px}
+.UploadImages h6{font-weight:400;font-size:15px;margin:0 0 3px 0}
+.UploadImages p{font-size:13px;color:#9a9797}
+.UploadImages input{position:absolute;top:0;left:0;height:100%;width:100%;cursor:pointer;opacity:0}
+.PercentageBased{padding-top:25px}
+.TextSmall{
+    width: 200px !important;
+}
+.pad40{
+    padding: 40px 0;
+}
+.TextSmall .UploadImages{
+    background-color: #fff;
+}
+.qrCode img{
+    border: 1px solid;
+    padding: 10px;
+    width: 130PX;
+}
+.qrCode a{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: underline;
+
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    color: #ea2096;
+}
+.qrCode{
+    margin-right: 80px;
+}
+.healthyRight h3{
+    color: #201e1f;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+}
+.healthyRight p{
+    color: #201e1fa8;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+  
+}
+.healthyLeft {
+    width: 159px;
+    height: 159px;
+}
+.healthyLeftimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.healthy{
+    padding: 40px 0 50px;
+    border-top: 1px solid #70707080;
+}
+
+
+
+
+.SidebarArea{ position: relative;z-index: 100 }
+.SidebarArea .Sidebar{height:100vh;overflow:auto;background-color:#edf0f7;position:fixed;top:0;right:0;height:100%;width:650px;transition:0.5s all ease-in-out;transform: translate(120%,0);
+    padding: 40px;
+}
+.SidebarArea .Sidebar .SidebarHead{background-color:#2d3645;padding:15px 20px;display:flex;align-items:center}
+.SidebarArea .Sidebar .SidebarHead p{color:#fff;font-size:17px;font-weight:500;margin:0 0 0 10px;letter-spacing:.5px}
+
+.side-open{overflow:hidden;position:relative}
+.side-open:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000000a1;z-index:99}
+
+.Closesidebar img{
+    width: 30px;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    left: 0;
+    cursor: pointer;
+}
+#Accept{
+    cursor: pointer;
+}
+
+
+
+
+.BusinessArea{padding:0 20px}
+.BusinessArea .BusinessHead{margin:0 0 15px 0;display:flex;align-items:center}
+.BusinessArea .BusinessHead .BusinessLeft{width:50%}
+.BusinessArea .BusinessHead .BusinessLeft .nav-tabs{border:none}
+.BusinessArea .BusinessHead .BusinessLeft .nav-tabs li.nav-item{margin:0 70px 0 0}
+.BusinessArea .BusinessHead .BusinessLeft .nav-tabs li.nav-item:last-child{margin:0 }
+.BusinessArea .BusinessHead .BusinessLeft .nav-tabs li.nav-item a.nav-link{padding:0;border:none;background-color:transparent;color:#8a8a8a;font-size:15px}
+.BusinessArea .BusinessHead .BusinessLeft .nav-tabs li.nav-item a.nav-link.active{color:#000}
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter{ display: flex; align-items: center; }
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter h3{ font-size: 20px; margin: 20px 20px 0 0; }
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter form{ position: relative;}
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter form label{ display: block; font-size: 14px; margin: 0 0 4px 0;}
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter form select{ border: 1px solid #ddd; padding: 8px 30px 8px 10px; min-width: 200px; font-size: 14px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: #fff; }
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter form .Icon{position: absolute; right: 10px; top: 35px;}
+.BusinessArea .BusinessHead .BusinessLeft a.Verify{ background-color: #ea2097; padding: 10px 25px; display: inline-block; margin: 0 10px 0 0px; color: #fff; text-transform: uppercase; font-weight: 500; letter-spacing: .5px;}
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter .OrderFilter{ display: flex; align-items: flex-end; }
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter .OrderFilter aside{ position: relative; margin-right: 10px }
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter .OrderFilter .SwitchText{ display: flex; align-items: center; }
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter .OrderFilter .SwitchText label{ margin: 10px 10px 10px 15px }
+.BusinessArea .BusinessHead .BusinessLeft .ReportFilter .OrderFilter .SwitchText p{font-size: 15px; color: #000;width: 110px;}
+
+.BusinessArea .BusinessHead .BusinessRight{width:50%;display:flex;justify-content:flex-end}
+.BusinessArea .BusinessHead .BusinessRight .SwitchText{display:flex;align-items:center;margin:8px 15px 0 0}
+.BusinessArea .BusinessHead .BusinessRight .SwitchText p{font-size:15px;color:#000}
+.BusinessArea .BusinessHead .BusinessRight ul{ display: flex; }
+.BusinessArea .BusinessHead .BusinessRight ul li{display:inline-block}
+.BusinessArea .BusinessHead .BusinessRight ul li a{border:1px solid #9e9e9e;padding:6px 15px;display:block;color:#000}
+.BusinessArea .BusinessHead .BusinessRight ul li.Dots a {padding: 0 15px; height: 100%; display: flex; align-items: center;}
+.BusinessArea .BusinessHead .BusinessRight ul li.Dots a span{ display: block; width: 3px; height: 3px; background-color: #000; border-radius: 5px; position: relative;}
+.BusinessArea .BusinessHead .BusinessRight ul li.Dots a span:before{ content: ''; width: 3px; height: 3px; background-color: #000; position: absolute; top: -6px; border-radius: 5px; left: 0; }
+.BusinessArea .BusinessHead .BusinessRight ul li.Dots a span:after{ content: ''; width: 3px; height: 3px; background-color: #000; position: absolute; bottom: -6px; border-radius: 5px; left: 0; }
+
+.BusinessArea .BusinessHead .BusinessRight ul li.active a{background-color:#fff;color:#ea2097}
+.BusinessArea .BusinessHead .BusinessRight ul li.Download{ margin: 0 0 0 6px;}
+.BusinessArea .BusinessHead .BusinessRight ul li.Download a{ padding: 0; width: 40px; background-color: #fff; text-align: center;}
+.BusinessArea .BusinessHead .BusinessRight .BusinessOrderRight ol li{display: inline-block;margin: 0 0 0 60px;}
+.BusinessArea .BusinessHead .BusinessRight .BusinessOrderRight ol li a{display: block;font-size: 15px;font-weight: 500;color: #868686;}
+.BusinessArea .BusinessHead .BusinessRight .BusinessOrderRight ol li a .fa-search{ font-size: 20px; }
+.BusinessArea .BusinessHead .BusinessRight .BusinessOrderRight ol li span{font-size: 15px;margin: 0 15px 0 0;font-weight: 500;color: #868686;}
+
+.BusinessBox{background-color:#fff;margin:0 0 40px 0;box-shadow:0 1px 3px #ddd;padding:15px 0 0 0}
+.BusinessBox h2{padding:0 20px;margin:0 0 20px 0;font-size:20px;color:#000; display: flex;}
+.BusinessBox h2 a{display:inline-block; margin: -2px 0 0 6px}
+.BusinessBox article{border-bottom:1px solid #ddd;display:flex;padding:0 20px 15px}
+.BusinessBox article .BusinessTotal{width:100%}
+.BusinessBox article .BusinessTotal p{font-size:15px;margin:0 0 5px 0;color:#636363}
+.BusinessBox article .BusinessTotal h3{font-size:35px;font-weight:300;color:#000}
+.BusinessBox article .BusinessTotal h3 span{font-size:15px;color:#8e8e8e}
+.BusinessBox figure img{width:100%}
+.BusinessBox figcaption{border-top:1px solid #ddd;padding:15px 30px;height:52px}
+.BusinessBox figcaption a{text-transform:uppercase;color:#ea2097;font-size:14px}
+
+.Switch{position:relative;display:inline-block;width:40px;height:16px;margin:8px 20px;border-radius:50px}
+.Switch input{opacity:0;width:0;height:0}
+.Switch .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#a5aab4;transition:0.4s;border-radius:50px}
+.Switch .slider:before{ position: absolute; content: ""; height: 22px; width: 22px; left: -7px; bottom: -3px; background-color: #fff; transition: 0.4s; border-radius: 50%; box-shadow: 0px 3px 3px #ddd;}
+.Switch input:checked+.slider{background-color:#ea2097}
+.Switch input:focus+.slider{box-shadow:0 0 1px #2196f3}
+.Switch input:checked+.slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px)}
+
+
+th .AED{
+    // display: block;
+    color: #201e1f8f;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+.ModalBox .modal-dialog .CloseModal {
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    width: 26px;
+    height: 26px;
+}
+.ModalBox .modal-body{
+    padding: 40px 40px;
+}
+.ModalBox .modal-body h3{
+    font-size: 20px;
+    text-align: center;
+}
+.ModalBox .image-box{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.barLine{
+    margin-left: 11px;
+    margin-top: 5px;
+}
+.barLine h3{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+}
+.barLine h3 span{
+    display: inline-block;
+    width: 22px;
+    background: #007bff;
+    height: 3px;
+    margin-right: 10px;
+}
+.sideDownIcon a{
+    padding: 7px 4px;
+    background: #fff;
+}
+.sideDownIcon1 a{
+    padding: 6px 4px;
+}
+.sideDownIcon1 a img{
+    width: 29px;
+    height: 29px;
+}
+.ModalBlock .modal-body {
+    text-align: center;
+    padding: 1rem 1rem 2rem;
+}
+.ModalBlock .modal-dialog h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 15px;
+    font-size: 23px;
+}
+.ModalBlock .modal-dialog .Decline p {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: #777;
+    // text-align: left;
+}
+
+
+
+
+.LoyaltyAdd{min-height:450px}
+.LoyaltyAdd figure{position: relative; margin: 0 0 25px 0;}
+.LoyaltyAdd figure img{ width: 100% }
+.LoyaltyAdd figure span{ cursor: pointer; position: absolute; right: 5px; bottom: 5px; background-color: #ffffff6b; padding: 10px 30px;}
+.LoyaltyAdd figure span input{position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer; opacity: 0; z-index: 1}
+.LoyaltyAdd figure span img{ width: 25px;}
+.LoyaltyAdd .form-group{border-bottom:1px solid #ddd;padding:0 0 20px 0;margin:0 0 20px 0}
+.LoyaltyAdd .form-group:last-child{border:none}
+.LoyaltyAdd .form-group label{display:block;font-size:14px;font-weight:400;color:#000}
+.LoyaltyAdd .form-group .col-sm-2 label{font-weight:500;}
+.LoyaltyAdd .form-group .Arbic label{text-align:right}
+.LoyaltyAdd .form-group .ServicesBox{margin:0 0 30px 0}
+.LoyaltyAdd .form-group .ServicesBox label{display:inline-block;margin:0 30px 0 0;min-width:115px;font-weight:400}
+.LoyaltyAdd .form-group .Search{position:relative}
+.LoyaltyAdd .form-group .Search .Icon{position:absolute;top:6px;right:15px;font-size:17px;color:#a0a0a0}
+.LoyaltyAdd .ExistUserBox{background-color:#ebebeb;padding:25px;border-radius:5px}
+.LoyaltyAdd .ExistUserBox .form-group{padding:0;border:none}
+.LoyaltyAdd .ExistUserBox .form-group .form-control{height:auto;font-size:14px;padding:10px 15px}
+.LoyaltyAdd .ExistUser button,
+a.More{background-color:#ea2097;padding:12px 35px;display:inline-block;color:#fff;text-transform:uppercase;font-weight:500;letter-spacing:.5px;border:none; outline: 0;}
+
+
+
+
+.LoyaltyAdd .form-group .PriceBox{display:flex}
+.LoyaltyAdd .form-group .PriceBox .PriceFelid{margin:0 10px 0 0;border:1px solid #ddd;border-radius:5px;display:flex;overflow:hidden;min-width:275px}
+.LoyaltyAdd .form-group .PriceBox .PriceFelid span{width:50px;display:block;border-right:1px solid #ddd;height:100%;text-align:center;padding:10px 0;font-size:15px;color:#8e8e8e}
+.LoyaltyAdd .form-group .PriceBox .PriceFelid input{border:none;height:100%;display:block;padding:0 14px;font-size:15px;width:82%;outline:0}
+.LoyaltyAdd .form-group .PriceBox .SwitchText{display:flex;align-items:center}
+.LoyaltyAdd .form-group .PriceBox .SwitchText p{font-size:15px;color:#000}
+
+.LoyaltyAdd .ChoiceCateAdd{background-color:#fafbfd;margin:0 0 30px 0;display:flex;justify-content:space-between;padding:20px}
+.LoyaltyAdd .ChoiceCateAdd aside span{position:absolute;top:10px;left:15px;filter:brightness(0);opacity:.3}
+.LoyaltyAdd .ChoiceCateAdd aside select{border:1px solid #ddd;padding:9px 15px 9px 40px;font-size:14px;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;cursor:pointer;width:100%;border-radius:5px;color:#9e9e9e;font-weight:400}
+.LoyaltyAdd .ChoiceCateAdd article a{border:1px solid #ea2097;color:#ea2097;text-transform:uppercase;padding:9px 25px;display:block;font-size:14px;font-weight:500}
+.LoyaltyAdd .ChoiceCateAdd article a:hover{background-color:#ea2097;color:#fff}
+.LoyaltyAdd .ChoiceForm{border:1px solid #ddd;border-radius:5px;overflow:hidden;box-shadow:0 0 3px #ddd}
+.LoyaltyAdd .ChoiceForm .ChoiceTitle{padding:17px 20px;border-bottom:1px solid #ddd;display:flex;justify-content:space-between}
+.LoyaltyAdd .ChoiceForm .ChoiceTitle h3{font-weight:500;font-size:20px}
+.LoyaltyAdd .ChoiceForm .ChoiceTitle aside{display:flex}
+.LoyaltyAdd .ChoiceForm .ChoiceTitle aside span{margin:0 10px 0 0}
+.LoyaltyAdd .ChoiceForm .ChoiceTitle aside select{font-size:14px;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;cursor:pointer;width:100%;border-radius:5px;color:#ea2097;font-weight:500;border:none}
+.LoyaltyAdd .ChoiceForm .ChoiceHead{background-color:#fafafd;padding:20px 20px}
+.LoyaltyAdd .ChoiceForm .ChoiceHead .form-group{border:none;margin:0;padding:0}
+.LoyaltyAdd .ChoiceForm .ChoiceHead .PriceValue{margin:20px 0 0 0;display:flex;align-items:center}
+.LoyaltyAdd .ChoiceForm .ChoiceHead .PriceValue aside{position:relative;display:block;margin:0 15px 0 0;min-width:120px}
+.LoyaltyAdd .ChoiceForm .ChoiceHead .PriceValue aside select{border:1px solid #ddd;padding:8px 30px 8px 10px;font-size:14px;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;cursor:pointer;width:100%;border-radius:5px}
+.LoyaltyAdd .ChoiceForm .ChoiceHead .PriceValue aside .Icon{position:absolute;right:10px;top:40px}
+.LoyaltyAdd .ChoiceForm .ChoiceBody{padding:15px}
+.LoyaltyAdd .ChoiceForm .ChoiceBody .card+.card{margin-top:20px}
+.LoyaltyAdd .ChoiceForm .ChoiceBody .card .card-header{background-color:#fff}
+.LoyaltyAdd .ChoiceForm .ChoiceBody .card .card-header h4{font-size:18px}
+.LoyaltyAdd .ChoiceForm .ChoiceBody .card .card-body .form-group{border:none;margin:0;padding:0}
+.LoyaltyAdd .ChoiceForm .ChoiceBody .card .card-body .NewPrice{margin-top:15px}
+.LoyaltyAdd .ChoiceForm .ChoiceBody .AddNew{display:flex;border:1px dashed #b9b9b9;border-radius:5px;margin:15px 0 0 0;align-items:center;justify-content:center;background-color:#f7f8f8;padding:9px 0}
+.LoyaltyAdd .ChoiceForm .ChoiceBody .AddNew img{ margin: -3px 0 0 0 }
+.LoyaltyAdd .ChoiceForm .ChoiceBody .AddNew p{text-transform:uppercase;font-size:14px;font-weight:500;color:#989898;letter-spacing:.5px;margin:0 0 0 10px}
+
+
+.CommonTabs .nav-tabs{margin:0 0 25px 0}
+.CommonTabs .nav-tabs .nav-item .nav-link{border:none;border-bottom:4px solid #fff0;font-size:14px;padding:10px 30px 15px;text-transform:uppercase;font-weight:500;color:#000;opacity:.5;letter-spacing:.5px}
+.CommonTabs .nav-tabs .nav-item .nav-link.active{border-color:#ea2097;color:#ea2097;opacity:1}
+
+
+.SearchAbsolute{
+    position: absolute;
+    top: 41px;
+    right: 18px;
+}
+
+.mapLocation5 {
+    left: 70%;
+    top: 60%;
+ }
+
+
+
+ .tooltipss:hover span {
+    opacity: 1;
+    // filter: alpha(opacity=100);
+    top: -6em;
+    left: -40px;
+    z-index: 99;
+    // -webkit-transition: all 0.2s ease;
+    // -moz-transition: all 0.2s ease;
+    // -o-transition: all 0.2s ease;
+    // transition: all 0.2s ease;
+    }
+    
+    .box b {
+      color: #fff;
+    }
+    .BusinessBox h2 a.tooltipss{
+        position: relative !important;
+        opacity: 1;
+    }
+    
+    .tooltipss span {
+        background: #fff; /*-- some basic styling */
+        color: #000;
+        font-family: "Helvetica";
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.5em;
+        padding: 16px 15px;
+        width: 240px;
+        // top: -4em;  /*-- this is the original position of the tooltipss when it's hidden */
+        // left: 20em;
+        margin-left: 0;	
+        /*-- set opacity to 0 otherwise our animations won't work */
+        opacity: 0;
+        // filter: alpha(opacity=0);  	
+        position: absolute;
+        text-align: center;	
+        z-index: 2;
+        text-transform: none;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .tooltipss span:after {
+        border-color: #fff rgba(0, 0, 0, 0);
+        border-style: solid;
+        border-width: 15px 15px 0;
+        bottom: -15px;
+        content: "";
+        display: block;
+        left: 31px;
+        position: absolute;
+        width: 0;
+    }
+
+    .Radio{display:block;position:relative;padding-left:35px;margin-bottom:0px;cursor:pointer;font-size:15px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:rgb(0 0 0 / 60%)!important}
+    .Radio input{position:absolute;opacity:0;cursor:pointer}
+    .Radio .Radiomark{position:absolute;top:0;left:0;height:22px;width:22px;background-color:#fff;border-radius:50%;border:1px solid #ddd}
+    .Radio:hover input~.Radiomark{background-color:#ccc}
+    .Radio input:checked~.Radiomark{background-color:#ea2097;border-color:#ea2097}
+    .Radio .Radiomark:after{content:"";position:absolute;display:none}
+    .Radio input:checked~.Radiomark:after{display:block}
+    .Radio .Radiomark:after{top:0;left:0;bottom:0;right:0;margin:auto;width:11px;height:11px;border-radius:50%;background:#fff}
+
+.FixSearch .form-group{
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.FixSearch .form-group .SearchAbsolute {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+
+
+.SwitchText .DateBox{
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    padding: 20px 10px;
+    bottom: 40px;
+    left: -190px;
+    box-shadow: 0 4px 12px #cecece;
+    border-radius: 5px;
+    }
+    .SwitchText .DateBox #Close{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    cursor: pointer;
+    }
+    
+    .SwitchText .DateBox .Date{
+    margin: 0 5px;
+    }
+    
+    .SwitchText .DateBox .Date label{
+    display: block;
+    font-size: 14px;
+    margin: 0 0 4px 0;
+    }
+    
+    .SwitchText .DateBox .Date input{
+    border: 1px solid #ddd;
+    padding: 8px 10px 8px 10px;
+    min-width: 160px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    text-transform: uppercase;
+    outline: 0;
+    }
+    
+    .SwitchText .DateBox .Date button{
+    padding: 8px 25px;
+    outline: 0;
+    border: none;
+    background-color: #e72e97;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    }
+    #dvPassport1{
+        display: none;
+    }
+
+.DisFlexCommission{
+    position: relative;
+}
+.DisFlexCommission input{
+    padding-right: 82px;
+}
+.DisFlexCommission .Button.btnRound.smallBtn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border-radius: 0;  
+    border: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.DisFlexCommission .Button.btnRound.smallBtn:hover {
+    background-color: #EA2096;
+    color: #fff;
+}
+.satelliteSearch.FixSearch .SearchAbsolute{
+    top: 15px;
+    right: 14px;
+}
+td.fullService select{
+    font-size: 11px;
+}
+
+.CoverageArea h1.StatusTitle{color:#000;font-size:15px;font-weight:400;margin:80px 0 -10px 0;display:flex;align-items:center}
+.CoverageArea h1.StatusTitle span{margin:0 10px 0 0}
+// .CoverageArea .CoverageList{margin:-15px}
+.CoverageArea .CoverageList form{padding:20px 15px;border-bottom:1px solid #ddd}
+.CoverageArea .CoverageList form input{width:100%;border:none;outline:0;border-bottom:1px solid #000;font-size:15px;padding:0 0 10px 0}
+.CoverageArea .CoverageList ul li{border-bottom:1px solid #ddd;padding:15px 20px;display:flex;align-items:center;justify-content:space-between}
+.CoverageArea .CoverageList ul li h4{text-transform:uppercase;font-size:16px;font-weight:600}
+.CoverageArea .CoverageList ul li h3{font-size:25px;margin:0 0 3px 0}
+.CoverageArea .CoverageList ul li p{font-size:14px;line-height:26px;color:#6d6d6d}
+.CoverageArea .CoverageList ul li p span{color:#000}
+.CoverageArea .CoverageList ul li .Switch .slider:before{background-color:#1e91d6;box-shadow:none}
+.CoverageArea .CoverageList ul li .Switch input:checked+.slider{background-color:#8fc8eb}
+.CoverageArea .CoverageList.TimesBox h1{padding:30px 20px 10px;font-size:20px;color:#000}
+.CoverageArea .CoverageList.TimesBox h1 a{float: right; color: #807e7e; font-weight: 500; font-size: 16px; text-decoration: underline;}
+.CoverageArea .CoverageList.TimesBox ul li{padding:15px 20px 35px}
+.CoverageArea .CoverageList.TimesBox ul li h5{font-size:15px;font-weight:400}
+.CoverageArea .CoverageList.TimesBox ul li p{font-size:15px}
+.CoverageArea .CoverageList.TimesBox ul li p span{ margin-right: 10px }
+.CoverageArea .CoverageList.TimesBox ul li:last-child a{text-transform:uppercase;color:#ea2097}
+
+.CoverageArea form .CoverageAdd .CoverageAddLeft img{ width: 100% }
+.CoverageArea form .CoverageAdd .CoverageAddLeft .Landmark{display:flex;align-items:center;border-bottom:1px solid #ddd;padding:0 0 15px 0}
+.CoverageArea form .CoverageAdd .CoverageAddLeft .Landmark label{margin:0;width:175px;font-size:13px;color:#000}
+.CoverageArea form .CoverageAdd .CoverageAddLeft .Landmark input{outline:0;font-size:13px;height:auto;padding:7px 15px}
+.CoverageArea form .CoverageAdd .CoverageAddLeft button{background-color:#ea2097;padding:10px 25px;display:inline-block;margin:0 0 0 10px;color:#fff;text-transform:uppercase;font-weight:500;letter-spacing:.5px;border:none;outline:0;float:right}
+.CoverageArea form .CoverageAdd{min-height:650px}
+.CoverageArea form .CoverageAdd .CoverageAddRight ul li{display:flex;align-items:center;justify-content:space-between;min-height:40px}
+.CoverageArea form .CoverageAdd .CoverageAddRight ul li:first-child h3{font-size:18px;font-weight:500}
+.CoverageArea form .CoverageAdd .CoverageAddRight ul li:first-child label{margin:0;padding:0 50px 0 0}
+.CoverageArea form .CoverageAdd .CoverageAddRight ul li:first-child label.Checkbox .checkmark{left:auto;right:14px}
+.CoverageArea form .CoverageAdd .CoverageAddRight ul li h4{font-size:15px;font-weight:400}
+.CoverageArea form .ParametersAdd{max-width:1300px}
+.CoverageArea form .ParametersAdd h3{font-size:17px;margin:0 0 15px 0;font-weight:400}
+.SmallerWapper h3.Title.Green {
+    color: #11a23e;
+}
+
+.Checkbox{display:block;position:relative;padding-left:35px;margin-bottom:12px;cursor:pointer;font-size:14px;-webkit-user-select:none;user-select:none;color:rgb(0 0 0 / 60%)!important}
+.Checkbox input{position:absolute;opacity:0;cursor:pointer;height:0;width:0}
+.Checkbox .checkmark{position:absolute;top:0;left:0;height:20px;width:22px;background-color:#fff;border:1px solid #ddd;border-radius:4px}
+.Checkbox input:checked~.checkmark{background-color:#ea2097;border-color:#ea2097}
+.Checkbox .checkmark:after{content:"";position:absolute;display:none}
+.Checkbox input:checked~.checkmark:after{display:block}
+.Checkbox .checkmark:after{left:8px;top:2px;width:5px;height:12px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(49deg)}
+
+
+
+
+.oflineOnline{
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: hidden;
+    max-height: 160px;
+}
+.oflineOnline label{
+    display: block;
+}

@@ -1,0 +1,173 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Notification Management</h4>
+    </div>
+    <div class="marginInner">
+        <div class="CreateOffer pb-5">
+            <div class="Tabcontainer">
+                <div class="tabFlex ">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" class="active show" href="#User">User Notification</a></li>
+                        <li><a data-toggle="tab" href="#Restaurant">Restaurant Owner Notification</a></li>
+                    </ul>
+                    <div class="tab-sideBtn">
+                        <a [routerLink]="['/send-new-notification']" class="Button  btnRound">Send New Notification</a>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="User" class="tab-pane fade in active show">
+                        <div class="TableList">
+                            <div class="dragscroll">
+                                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>User Name</th>
+                                            <th>Notification Message</th>
+                                            <th>Notification Status</th>
+                                            <th>Action </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Restaurant" class="tab-pane fade">
+                        <div class="TableList">
+                            <div class="dragscroll">
+                                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>User Name</th>
+                                            <th>Notification Message</th>
+                                            <th>Notification Status</th>
+                                            <th>Action </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-new-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-new-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-new-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-new-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>VisHal</td>
+                                            <td>Happy Holiday</td>
+                                            <td>Sent</td>
+                                            <td class="ActionImg">
+                                                <a [routerLink]="['/send-new-notification']" class="Button btnRound">
+                                                    Send
+                                                </a>
+                                            </td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="LoginArea bgArea" style=" background-image: url('assets/images/bg.jpg');">
+    <div class="LoginBox">
+            <div class="logoMainImg">
+            </div>
+        <h5>Welcome to the Bite.me </h5>
+        <h6 class="mb-4">If you're unable to login or recover your password (link below), Please contact your account manager.</h6>
+        <!-- <p><span>You have been successfully logged out</span></p> -->
+        <form class="formPadding">
+            <div class="form-group">
+                <input type="email" placeholder=" E-mail " class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="password" placeholder=" Password" class="form-control">
+                <a href="javaScript:void(0)" class="IconEye"><i class="fa fa-eye" aria-hidden="true"></i></a>
+            </div>
+            <button type="button"  [routerLink]="['/dashboard']" class="Login">LOGIN</button>
+            <div class="Checkboxs">
+                <a  [routerLink]="['/forgot']">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+</div>

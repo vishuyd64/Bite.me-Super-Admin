@@ -1,0 +1,338 @@
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead DisFlex">
+        <h4 class="Title">Add Cuisine   </h4>
+        <div class="backArrow">
+            <a [routerLink]="['/cuisine-management']" class="backBtn" ><img src="assets/images/arrow-left.svg" alt="arrow-left" class="img-fluid"></a>
+        </div>
+    </div>
+    <div class="marginInner">
+       
+        <div class="TableList">
+            <div class="dragscroll">
+                <div class="SmallerWapperBox">
+                    <div class="CoverageArea">
+    
+                        <div class="CommonTabs">
+                            <ul class="nav nav-tabs">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#Un-Verified">ITEMS DETAILS</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link " data-toggle="tab" href="#Verified">ITEMS Choices</a>
+                                  </li>
+                            </ul>
+         
+                            <div class="tab-content">
+                                  <div class="tab-pane active" id="Un-Verified">
+                                      <div class="LoyaltyAdd">
+                                         <form>         
+                                             <div class="ChoiceCateAdd" style=" justify-content: flex-end;">
+                                                  
+                                                 <article>
+                                                     <a href="javascript:void(0);">
+                                                         + Add new item
+                                                     </a>
+                                                 </article>
+                                             </div>    
+                                             <div class="form-group">
+                                                 <div class="row mr-0">
+                                                     <div class="col-sm-2">
+                                                         <label>Items images</label>
+                                                     </div>  
+                                                     <div class="col-sm-10">
+                                                         <div class="UploadImages">
+                                                             <span><img src="assets/images/camera2.png"></span>
+                                                             <h6>Add items images</h6>
+                                                             <p>Image Size : 400 x 300 px / Image formats : jpg, png / 5MB Max.</p>
+                                                             <input type="file">
+                                                         </div>
+                                                     </div> 
+                                                 </div>
+                                             </div> 
+                                             <div class="form-group">
+                                                 <div class="row mr-0">
+                                                     <div class="col-sm-2">
+                                                         <label>Items Name</label>
+                                                     </div>
+                                                     <div class="col-sm-5">
+                                                         <label>English</label>
+                                                         <input type="text" class="form-control">
+                                                     </div>
+                                                     <div class="col-sm-5 Arbic">
+                                                         <label>الإنجليزية</label>
+                                                         <input type="text" class="form-control">
+                                                     </div>
+                                                 </div>
+                                             </div> 
+    
+                                             <div class="form-group">
+                                                 <div class="row mr-0">
+                                                     <div class="col-sm-2">
+                                                         <label>Items Description</label>
+                                                     </div>
+                                                     <div class="col-sm-5">
+                                                         <label>English</label>
+                                                         <textarea rows="3" class="form-control"></textarea>
+                                                     </div>
+                                                     <div class="col-sm-5 Arbic">
+                                                         <label>الإنجليزية</label>
+                                                         <textarea rows="3" class="form-control"></textarea>
+                                                     </div>
+                                                 </div>
+                                             </div> 
+    
+                                             <div class="form-group">
+                                                 <div class="row mr-0">
+                                                     <div class="col-sm-2">
+                                                         <label>Price</label>
+                                                     </div>
+                                                     <div class="col-sm-6">
+                                                         
+                                                         <div class="PriceBox">
+    
+                                                             <div class="PriceFelid">
+                                                                 <span>AED</span>
+                                                                 <input type="text" placeholder="0">
+                                                             </div>
+    
+                                                             <div class="SwitchText">
+                                                                <label class="Switch">
+                                                                      <input type="checkbox">
+                                                                     <span class="slider"></span> 
+                                                                </label>
+                                                                <p>Price on selection</p>
+                                                            </div>
+                                                         </div>
+    
+                                                     </div> 
+                                                 </div>
+                                             </div> 
+                                         </form>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade " id="Verified">
+                                      <div class="LoyaltyAdd">
+                                         <form>
+    
+                                             <div class="ChoiceCateAdd">
+                                                 <aside>
+                                                     <span><img src="assets/images/sort.png"></span>
+                                                     <select>
+                                                        <option>SORT CHOICE CATEGORIES</option>
+                                                    </select>
+                                                 </aside>
+                                                 <article>
+                                                     <a href="javascript:void(0);">
+                                                         + Add new choice category
+                                                     </a>
+                                                 </article>
+                                             </div>
+    
+                                             <div class="ChoiceForm">
+                                                 <div class="ChoiceTitle">
+                                                     <h3>Add On's</h3>
+                                                     <aside>
+                                                         <span><img src="assets/images/sort.png"></span>
+                                                         <select>
+                                                            <option>SORT CHOICE</option>
+                                                        </select>
+                                                     </aside>
+                                                 </div>
+    
+                                                 <div class="ChoiceHead">
+                                                     <div class="form-group">
+                                                         <div class="row">
+                                                             <div class="col-sm-2">
+                                                                 <label>Choice Category</label>
+                                                             </div>
+                                                             <div class="col-sm-9">
+                                                                 <div class="row">
+                                                                     <div class="col-sm-6">
+                                                                         <label>English</label>
+                                                                         <input type="text" class="form-control">
+                                                                     </div>
+                                                                     <div class="col-sm-6 Arbic">
+                                                                         <label>الإنجليزية</label>
+                                                                         <input type="text" class="form-control">
+                                                                     </div>
+    
+                                                                     <div class="col-sm-12">
+                                                                         <div class="PriceValue">
+                                                                             <aside>
+                                                                                <label>Min</label>
+                                                                                <select>
+                                                                                    <option>0</option>
+                                                                                </select>
+                                                                                <span class="Icon"><i class="fa fa-caret-down"></i></span> 
+                                                                            </aside>
+                                                                            <aside>
+                                                                                <label>Max</label>
+                                                                                <select>
+                                                                                    <option>0</option>
+                                                                                </select>
+                                                                                <span class="Icon"><i class="fa fa-caret-down"></i></span> 
+                                                                            </aside>
+                                                                            <aside>
+                                                                                <img src="assets/images/information.png"> 
+                                                                            </aside>
+                                                                         </div>
+                                                                     </div>
+    
+                                                                 </div>
+                                                             </div>
+                                                             <div class="col-sm-1"> </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+    
+                                                 <div class="ChoiceBody">
+                                                     <div class="card">
+                                                         <div class="card-header">
+                                                             <h4>Mayonnaise</h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                             <div class="form-group">
+                                                                 <div class="row">
+                                                                     <div class="col-sm-2">
+                                                                         <label>Choice</label>
+                                                                     </div>
+                                                                     <div class="col-sm-9">
+                                                                         <div class="row">
+                                                                             <div class="col-sm-6">
+                                                                                 <label>English</label>
+                                                                                 <input type="text" class="form-control">
+                                                                             </div>
+                                                                             <div class="col-sm-6 Arbic">
+                                                                                 <label>الإنجليزية</label>
+                                                                                 <input type="text" class="form-control">
+                                                                             </div>
+    
+                                                                             <div class="col-sm-12">
+                                                                                 <div class="NewPrice">
+                                                                                     <label>Price</label>
+                                                                                     <div class="PriceBox"> 
+                                                                                         <div class="PriceFelid">
+                                                                                             <span>AED</span>
+                                                                                             <input type="text" placeholder="0">
+                                                                                         </div> 
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+    
+                                                                         </div>
+                                                                     </div>
+                                                                     <div class="col-sm-1">
+                                                                         
+                                                                     </div>
+                                                                 </div>
+                                                             </div> 
+                                                        </div>
+                                                     </div>
+    
+                                                     <div class="card">
+                                                         <div class="card-header">
+                                                             <h4>Cheese</h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                             <div class="form-group">
+                                                                 <div class="row">
+                                                                     <div class="col-sm-2">
+                                                                         <label>Choice</label>
+                                                                     </div>
+                                                                     <div class="col-sm-9">
+                                                                         <div class="row">
+                                                                             <div class="col-sm-6">
+                                                                                 <label>English</label>
+                                                                                 <input type="text" class="form-control">
+                                                                             </div>
+                                                                             <div class="col-sm-6 Arbic">
+                                                                                 <label>الإنجليزية</label>
+                                                                                 <input type="text" class="form-control">
+                                                                             </div>
+    
+                                                                             <div class="col-sm-12">
+                                                                                 <div class="NewPrice">
+                                                                                     <label>Price</label>
+                                                                                     <div class="PriceBox"> 
+                                                                                         <div class="PriceFelid">
+                                                                                             <span>AED</span>
+                                                                                             <input type="text" placeholder="0">
+                                                                                         </div> 
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+    
+                                                                         </div>
+                                                                     </div>
+                                                                     <div class="col-sm-1 text-right">
+                                                                         <label>&nbsp;</label>
+                                                                         <a href="javascript:void">
+                                                                             <img src="assets/images/delete.png">
+                                                                         </a>
+                                                                     </div>
+                                                                 </div>
+                                                             </div> 
+                                                        </div>
+                                                     </div>
+    
+                                                     <div class="card">
+                                                         <div class="card-header">
+                                                             <h4>Chicken</h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                             <div class="form-group">
+                                                                 <div class="row">
+                                                                     <div class="col-sm-2">
+                                                                         <label>Choice</label>
+                                                                     </div>
+                                                                     <div class="col-sm-9">
+                                                                         <div class="row">
+                                                                             <div class="col-sm-6">
+                                                                                 <label>English</label>
+                                                                                 <input type="text" class="form-control">
+                                                                             </div>
+                                                                             <div class="col-sm-6 Arbic">
+                                                                                 <label>الإنجليزية</label>
+                                                                                 <input type="text" class="form-control">
+                                                                             </div>
+    
+                                                                             <div class="col-sm-12">
+                                                                                 <div class="NewPrice">
+                                                                                     <label>Price</label>
+                                                                                     <div class="PriceBox"> 
+                                                                                         <div class="PriceFelid">
+                                                                                             <span>AED</span>
+                                                                                             <input type="text" placeholder="0">
+                                                                                         </div> 
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+    
+                                                                         </div>
+                                                                     </div>
+                                                                     <div class="col-sm-1">
+                                                                         
+                                                                     </div>
+                                                                 </div>
+                                                             </div> 
+                                                        </div>
+                                                     </div>
+    
+                                                     <div class="AddNew">
+                                                         <p>Add new choice</p>
+                                                     </div>
+    
+                                                 </div>
+                                             </div>
+                                         </form>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
